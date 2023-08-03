@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Studant_manager
+namespace student_manager
 {
     internal static class Program
     {
@@ -16,7 +16,17 @@ namespace Studant_manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Loggin_Form());
+            //Application.Run(new Login_Form());
+            Login_Form telaDeLogin = new Login_Form();
+
+            if (telaDeLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FormPrincipal());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

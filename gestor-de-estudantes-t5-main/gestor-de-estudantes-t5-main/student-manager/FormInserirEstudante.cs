@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Studant_manager
+namespace student_manager
 {
-    public partial class Form1 : Form
+    public partial class FormInserirEstudante : Form
     {
-        public Form1()
+        public FormInserirEstudante()
         {
             InitializeComponent();
         }
